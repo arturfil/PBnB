@@ -22,7 +22,7 @@ export class PlacesService {
       2000
     ),
     new Place(
-      'p2',
+      'p3',
       'San Fran',
       'They are Trendy with Wendy',
       'https://www.2140taylorapts.com/wp-content/uploads/sites/47/2014/11/2140-Taylor-3.jpg',

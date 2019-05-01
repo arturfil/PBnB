@@ -3,6 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { NavController, ModalController } from '@ionic/angular';
 import { PlacesService } from '../../places.service';
 import { Place } from '../../place.model';
+import { BookingModalComponent } from 'src/app/bookings/booking-modal/booking-modal.component';
 
 @Component({
   selector: 'app-place-detail',
@@ -34,6 +35,11 @@ export class PlaceDetailPage implements OnInit {
     // this.router.navigateByUrl('places/tabs/discover');
     // this.navCtrl.navigateBack('/places/tabs/discover');
     // this.navCtrl.pop();
+    this.modalCtrl
+      .create({component: BookingModalComponent })
+      .then(modalEl => {
+        modalEl.present();
+    })
   }
 
 }

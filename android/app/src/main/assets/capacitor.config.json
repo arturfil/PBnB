@@ -1,0 +1,7 @@
+{
+  "appId": "com.arturofilio.mybookings",
+  "appName": "my-bookings",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
